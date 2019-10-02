@@ -21,7 +21,15 @@
   color: #09d3ac;
 }
 
-.user-card{
-  width: 300px;
-  background-color: magenta;
+body {
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+
+}
+
+.ui{
+  width: 880px;
+  background-color: red;
 }

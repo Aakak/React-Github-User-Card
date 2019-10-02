@@ -27,7 +27,7 @@ componentDidMount () {
   })
   .catch(err => console.log(err));
   axios 
-  .get("https://api.github.com/users/Aakak/followers?per_page=6")
+  .get("https://api.github.com/users/Aakak/followers?per_page=8&page=3")
   .then(res => {
     console.log("folowers:")
     console.log(res);
@@ -40,21 +40,16 @@ componentDidMount () {
   console.log("Axios is running")
 }
 
-
-
-
-
 render () {
   console.log("rendering");
   return (
     <div className="App">
+     <h1>Github Users</h1>
     <UserCard card={this.state.UserCard} />
-    
     {this.state.FollowersCards.map(function(follower) { 
         return <FollowersCard FollowersCard={follower} />
       }
-    )}
-    
+    )} 
     </div>
   )
 }
