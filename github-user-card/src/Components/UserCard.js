@@ -5,6 +5,7 @@ import { Card, Icon, Image } from 'semantic-ui-react';
 const UserCard = props => {
     console.log(props)
     return (
+      <div className="card">
         <Card className="ui card">
         <Image className="image" src={props.card.avatar_url} wrapped ui={false}/> 
         <Card.Content className="content">
@@ -23,6 +24,7 @@ const UserCard = props => {
       </a>
         </Card.Content>
         </Card>
+        </div>
     )
 }
 

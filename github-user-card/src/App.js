@@ -27,7 +27,7 @@ componentDidMount () {
   })
   .catch(err => console.log(err));
   axios 
-  .get("https://api.github.com/users/Aakak/followers?per_page=8&page=3")
+  .get("https://api.github.com/users/Aakak/followers?per_page=7&page=4")
   .then(res => {
     console.log("folowers:")
     console.log(res);
