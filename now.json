@@ -1,9 +1,9 @@
 {
-    "version": 1,
+    "version": 2,
     "name": "github-user-card",
     "builds": [
         { "src": "app/package.json", "use": "@now/static-build ", "config": {"distDir": "build"} }],
     "routes": [
-        { "src": "/(.*)", "dest": "github-user-card/public/$1" }
+        { "src": "/(.*)", "dest": "github-user-card/$1" }
     ]
 }
