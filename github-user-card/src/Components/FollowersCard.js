@@ -14,7 +14,7 @@ const FollowersCard = props =>
     <Card.Content className="extra content">
         <a >
             <Icon className="user icon" name='user' />
-    Following: {props.FollowersCard.following}
+             Following: {props.FollowersCard.following}
         </a>
         <a>
             <Icon className="user icon" name='user' />
